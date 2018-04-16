@@ -1,0 +1,13 @@
+<a [routerLink]="['/libraries/', library.id]">
+  <div class="place-info-box">
+    <span class="place-info-box-icon"><img [src]="library.imagePath" /></span>
+
+    <div class="place-info-box-content">
+      <span class="place-info-box-text">{{library.nameBook}}</span>
+      <span class="place-info-box-star"><i class="fa fa-star"></i> {{library.rating}}</span>
+      <span class="place-info-box-detail">{{library.author}}</span>
+      <span class="place-info-box-detail">{{library.category}}</span>
+    </div>
+    <!-- /.info-box-content -->
+  </div>
+</a>
